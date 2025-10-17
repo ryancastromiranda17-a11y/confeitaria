@@ -1,0 +1,316 @@
+:root {
+    --Cor-Principal: #F1C0B9;
+    --cor-rosaforte: #F47387;
+    --cor-branca: #FFFFFF;
+    --cor-marrom: #30110E;
+    --cor-marromclaro: #AF686E;
+    --COR-PRETA: black;
+    --cor-listabolo-letras: #664747;
+    --cor-preco: #FFD2D7;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    transition: 0.2s linear;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+
+}
+
+body {
+    background-color: var(--Cor-Principal);
+
+}
+
+.header__section {
+    padding: 1rem 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+
+.header {
+    background-color: var(--cor-rosaforte);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-radius: 0% 0% 40px 40px;
+
+}
+
+.header img {
+    margin-top: 0;
+}
+
+.header__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.nav a {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    color: var(--cor-branca);
+
+}
+
+.nav a:hover {
+    color: var(--Cor-Principal);
+    border-bottom: 0.1rem solid var(--Cor-Principal);
+    padding-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 36px;
+    height: 36px;
+    transition: 0.2s linear;
+}
+
+.lupa {
+    width: 35px;
+    height: 35px;
+}
+
+.botao {
+    background-color: var(--Cor-Principal);
+    color: var(--COR-PRETA);
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+
+
+}
+
+.botao:hover {
+    border-bottom: 0.1rem solid var(--Cor-Principal);
+    padding-bottom: 0.5rem;
+    font-size: 1.03rem;
+}
+
+.bota {
+    background-color: var(--cor-marromclaro);
+    color: var(--cor-branca);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+
+
+}
+
+.bota:hover {
+
+    padding-bottom: 0.5rem;
+    font-size: 1.03rem;
+
+}
+
+
+
+.home-container {
+    background-image: url("img/bolos-de-pastelaria-francesa\ \(1\).png");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 75vh;
+
+}
+
+.conteudo {
+    max-width: 60rem;
+    margin-left: 112px;
+
+}
+
+.conteudo h2 {
+    color: var(--cor-branca);
+    font-size: 4rem;
+
+
+
+}
+
+.conteudo h3 {
+    color: var(--cor-branca);
+    font-size: 2.5rem;
+
+
+}
+
+.conteudo p {
+    color: var(--cor-branca);
+    font-size: 0.9rem;
+
+
+}
+
+.cardapio {
+
+    background: linear-gradient(#F8E9E9, #FBCFCF);
+
+    margin-top: 5rem;
+    border-radius: 50px;
+    height: 1180px;
+    margin-left: 80px;
+    margin-right: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.cardapio h2 {
+    font-size: 3rem;
+    font-family: "Jacques Francois", serif;
+    text-align: center;
+    padding: 3.7rem;
+}
+
+
+
+.cardapio__bolo {
+
+    background-color: var(--cor-preco);
+    margin-left: 50px;
+    border-radius: 50px;
+    width: 505px;
+    height: 295px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.titulo__bolo {
+    text-align: center;
+
+    justify-content: space-between;
+    padding: 1.5rem;
+    gap: 10rem;
+    display: flex;
+    font-size: 2rem;
+    font-family: "Jacques Francois", serif;
+
+
+
+
+}
+
+
+.titulo__bolo h4 {
+
+    font-family: "Jacques Francois", serif;
+
+
+
+}
+
+.lista__bolos {
+    padding: 20px;
+
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 5px;
+    font-weight: 600;
+    color: var(--cor-listabolo-letras);
+}
+
+.bolos {
+    display: flex;
+    gap: 40rem;
+}
+
+.cardapio__docinhos {
+    display: flex;
+    gap: 40rem;
+
+}
+
+.docinhos__container {
+    gap: 56rem;
+}
+
+.docinhos {
+    margin: 40px 0 12px 120px;
+    display: flex;
+    gap: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.docinhos__linhadois {
+    display: flex;
+    gap: 14px;
+    margin: 0 0 12px 120px;
+}
+
+.docinhos__linhatrez {
+    display: flex;
+    gap: 14px;
+    margin: 0 0 0 120px;
+}
+
+.cento__docinhos {
+    background-color: var(--cor-preco);
+    display: block;
+    text-align: center;
+    margin-top: 173px;
+
+    width: 328px;
+    height: 212px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.cento__docinhos h4 {
+    margin-top: 39px;
+    font-size: 2rem;
+    font-family: "Jacques Francois", serif;
+    color: var(--cor-marrom);
+
+}
+
+.cento__docinhos h5 {
+    margin-top: 41px;
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: var(--cor-listabolo-letras);
+}
+
+.rodape {
+    background-color: var(--cor-rosaforte);
+    color: var(--cor-branca);
+    height: 160px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 55px;
+    border-radius: 40px 40px 0% 0%;
+
+}
+
+.rodape p {
+    text-align: end;
+
+
+}
