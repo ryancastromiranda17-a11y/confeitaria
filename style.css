@@ -309,24 +309,108 @@ body {
 
 }
 
+.footer__logo {
+    display: flex;
+    align-items: flex-start;
+
+}
+
 
 .logo__footer img {
     transform: translate(65px, 35px);
 }
 
 .footer__titulo {
-    transform: translate(200px, -45px);
-}
+    transform: translate(130px, 40px);
 
-.footer__titulo h3 {
-    margin-bottom: 10px;
 
 }
 
-.footer__section h3:hover {
+
+
+
+.footer__titulo li {
+    margin-bottom: 6px;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.footer__titulo a {
+    color: var(--cor-branca);
+}
+
+.footer__titulo li:hover {
     color: var(--Cor-Principal);
-    border-bottom: 0.1rem solid var(--Cor-Principal);
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.2rem;
     font-size: 1.4rem;
     transition: 0.2s linear;
+
+}
+
+.linha {
+    width: 1px;
+    height: 139px;
+    background-color: var(--cor-branca);
+    margin: 0 20px;
+    transform: translate(500px, -60px);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer__social {
+    transform: translate(700px, -200px);
+
+
+}
+
+.logo__facebook {
+    display: flex;
+    margin-top: 1.5rem;
+    transform: translate(-100px);
+
+}
+
+
+.logo__facebook p {
+    padding: 5px 4px;
+
+}
+
+.logo__inst {
+    transform: translate(-98px);
+    display: flex;
+}
+
+.logo__inst p {
+    padding: 5px 7px;
+
+}
+
+
+.linha__right {
+    width: 1px;
+    height: 139px;
+    background-color: var(--cor-branca);
+    margin: 0 20px;
+    transform: translate(1100px, -310px);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo__whats {
+    transform: translate(1250px, -430px);
+    display: flex;
+}
+
+.logo__whats p {
+    padding: 7px 10px;
+}
+
+.footer__copy {
+    text-align: end;
+    transform: translate(0px, -358px);
+
 }
