@@ -26,7 +26,8 @@ body {
 .header__section {
     padding: 1rem 1rem;
     margin: 0 auto;
-    max-width: 1200px;
+
+
 
 }
 
@@ -128,6 +129,7 @@ body {
     background-position: center;
     background-size: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .home-container section {
@@ -168,7 +170,7 @@ body {
 .cardapio {
 
     background: linear-gradient(#F8E9E9, #FBCFCF);
-    gap: 20rem;
+
     margin-top: 5rem;
     border-radius: 50px;
     height: 1180px;
