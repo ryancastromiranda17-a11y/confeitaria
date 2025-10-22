@@ -56,7 +56,7 @@ body {
 
 .nav a {
     margin: 0 1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--cor-branca);
 
 }
@@ -65,7 +65,7 @@ body {
     color: var(--Cor-Principal);
     border-bottom: 0.1rem solid var(--Cor-Principal);
     padding-bottom: 0.5rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .icons img {
@@ -124,7 +124,7 @@ body {
 
 
 .home-container {
-    background-image: url("img/bolos-de-pastelaria-francesa\ \(1\).png");
+    background-image: url("img/bolos-e-doces-em-exposição-em-uma-vitrine-em-paris.png");
     background-position: center;
     background-size: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -168,12 +168,12 @@ body {
 .cardapio {
 
     background: linear-gradient(#F8E9E9, #FBCFCF);
-
+    gap: 20rem;
     margin-top: 5rem;
     border-radius: 50px;
     height: 1180px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
 }
@@ -199,9 +199,11 @@ body {
 
 }
 
+
+
 .titulo__bolo {
     text-align: center;
-
+    color: var(--cor-listabolo-letras);
     justify-content: space-between;
     padding: 1.5rem;
     gap: 10rem;
@@ -238,66 +240,81 @@ body {
 
 .bolos {
     display: flex;
-    gap: 40rem;
+
+    gap: 20rem;
+    margin-left: 5rem;
+
+
+
+}
+
+.cardapio__bolo {
+    flex-wrap: wrap;
 }
 
 .cardapio__docinhos {
     display: flex;
-    gap: 40rem;
-
-}
-
-.docinhos__container {
-    gap: 56rem;
-}
-
-.docinhos {
-    margin: 40px 0 12px 120px;
-    display: flex;
-    gap: 14px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.docinhos__linhadois {
-    display: flex;
-    gap: 14px;
-    margin: 0 0 12px 120px;
-}
-
-.docinhos__linhatrez {
-    display: flex;
-    gap: 14px;
-    margin: 0 0 0 120px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3rem;
 }
 
 .cento__docinhos {
     background-color: var(--cor-preco);
-    display: block;
-    text-align: center;
-    margin-top: 173px;
-
-    width: 328px;
-    height: 212px;
     border-radius: 30px;
+    width: 450px;
+    height: 150px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    right: 30rem;
+    position: relative;
+
+
 }
 
+.titulo__docinhos {
+    display: block;
+    justify-content: space-between;
+    text-align: center;
 
-.cento__docinhos h4 {
-    margin-top: 39px;
-    font-size: 2rem;
+    margin-top: 1rem;
+    padding: 0 2rem;
+}
+
+.titulo__docinhos h4 {
     font-family: "Jacques Francois", serif;
-    color: var(--cor-marrom);
-
-}
-
-.cento__docinhos h5 {
-    margin-top: 41px;
-    font-size: 2rem;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
+    font-size: 1.5rem;
     color: var(--cor-listabolo-letras);
 }
+
+.titulo__docinhos h5 {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: var(--cor-listabolo-letras);
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+.docinhos__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    left: 11rem;
+    position: relative;
+
+
+}
+
+.docinhos__container img {
+    padding: 4px 4px;
+    gap: 2px;
+}
+
+
 
 .footer__section {
     background-color: var(--cor-rosaforte);
@@ -386,6 +403,12 @@ body {
 .logo__inst p {
     padding: 5px 7px;
 
+
+}
+
+.logo__inst a {
+    color: var(--cor-branca);
+
 }
 
 
@@ -409,8 +432,289 @@ body {
     padding: 7px 10px;
 }
 
+.logo__whats a {
+    color: var(--cor-branca);
+}
+
 .footer__copy {
     text-align: end;
     transform: translate(0px, -358px);
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .header {
+        position: relative;
+    }
+
+    .header__section {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .nav {
+        gap: 1.5rem;
+        order: 3;
+        width: 100%;
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+
+    .nav a {
+        font-size: 1rem;
+    }
+
+    .icons {
+        justify-items: center;
+        gap: 0.8rem;
+    }
+
+    .icons img {
+
+        width: 28px;
+        height: 28px;
+    }
+
+    .conteudo {
+        margin-left: 50px;
+        text-align: center;
+    }
+
+    .conteudo h2 {
+        font-size: 3rem;
+    }
+
+    .conteudo h3 {
+        font-size: 2rem;
+    }
+
+    .cardapio {
+        margin: 5rem 2rem;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    .bolos {
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .cardapio__bolo {
+        width: 90%;
+        margin-left: 0;
+    }
+
+
+    .docinhos__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+
+
+
+        gap: 0.4rem;
+    }
+
+    .item__docinhos img {
+        max-width: 125px;
+        align-items: center;
+
+    }
+
+    .cento__docinhos {
+        width: 450px;
+        height: 140px;
+        margin: 2.5rem auto;
+    }
+
+    .titulo__docinhos {
+        display: block;
+        text-align: center;
+
+    }
+
+    .titulo__docinhos h4 {
+        font-size: 1.8rem;
+
+    }
+
+    .titulo__docinhos h5 {
+        font-size: 1.6rem;
+        font-family: "Inter", sans-serif;
+    }
+
+    .footer__section {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .footer__logo {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .logo__footer img {
+        transform: none;
+    }
+
+    .footer__titulo {
+        transform: none;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .linha {
+        display: none;
+    }
+
+    .footer__social {
+        transform: none;
+        text-align: center;
+        margin-top: 2rem;
+
+    }
+
+    .linha__right {
+        display: none;
+    }
+
+    .logo__facebook,
+    .logo__inst {
+        transform: none;
+        display: inline-flex;
+        justify-content: center;
+        margin: 0.5rem 1rem;
+    }
+
+    .logo__whats {
+        transform: none;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .footer__copy {
+        transform: none;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__section {
+
+        flex-wrap: wrap;
+        padding: 0.8rem;
+    }
+
+    .nav a {
+        margin: 0 0.5rem;
+        font-size: 1rem;
+    }
+
+    .conteudo {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .conteudo h2 {
+        font-size: 2.5rem;
+    }
+
+    .conteudo h3 {
+        font-size: 1.5rem;
+    }
+
+    .cardapio {
+        margin: 5rem auto;
+
+        border-radius: 30px;
+    }
+
+    .cardapio h2 {
+        font-size: 2.5rem;
+        padding: 2rem;
+    }
+
+    .titulo__bolo {
+        font-size: 20px;
+        gap: 0.5rem;
+    }
+
+    .lista__bolos {
+        font-size: 15px;
+    }
+
+    .docinhos__container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        margin-left: 80px;
+        position: relative;
+
+    }
+
+    .item__docinhos img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .cento__docinhos {
+
+        width: 280px;
+        height: 130px;
+        margin: 2rem auto;
+        border-radius: 30px;
+    }
+
+    .titulo__docinhos {
+        display: block;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .titulo__docinhos h4 {
+        font-size: 1.6rem;
+
+
+    }
+
+    .titulo__docinhos h5 {
+        font-size: 1.2rem;
+        font-family: "Inter", sans-serif;
+
+    }
+
+
+
+    .footer__titulo {
+
+        gap: 0.6rem;
+    }
+
+    .footer__titulo:hover {
+        font-size: 1rem;
+    }
+
+    .footer__social h3 {
+        font-size: 1rem;
+    }
+
+    .logo__facebook,
+    .logo__inst {
+        margin: 0.5rem 0.5rem;
+    }
+
+    .logo__facebook p,
+    .logo__inst p,
+    .logo__whats p {
+        font-size: 0.9rem;
+    }
 
 }
