@@ -339,6 +339,10 @@ body {
     transform: translate(65px, 35px);
 }
 
+.logo__facebook p {
+    color: var(--cor-branca);
+}
+
 .footer__titulo {
     transform: translate(130px, 40px);
 
