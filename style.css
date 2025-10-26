@@ -499,6 +499,14 @@ body {
         font-size: 2rem;
     }
 
+    .botao {
+        font-size: 1.5rem;
+    }
+
+    .bota {
+        font-size: 1.5rem;
+    }
+
     .cardapio {
         margin: 5rem 2rem;
         height: auto;
@@ -644,38 +652,54 @@ body {
         border-radius: 30px;
     }
 
+    .botao {
+        font-size: 0.9rem;
+    }
+
+    .bota {
+        font-size: 0.9rem;
+    }
+
     .cardapio h2 {
         font-size: 2.5rem;
         padding: 2rem;
     }
 
     .titulo__bolo {
-        font-size: 20px;
+        font-size: 30px;
         gap: 0.5rem;
     }
 
     .lista__bolos {
-        font-size: 15px;
+        font-size: 25px;
     }
 
-    .docinhos__container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-        margin-left: 80px;
-        position: relative;
+
+
+    .cardapio__docinhos {
+        display: block;
+
+    }
+
+    .item__docinhos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        margin-left: 100PX;
+
+
 
     }
 
     .item__docinhos img {
-        width: 75px;
-        height: 75px;
+        width: 150px;
+        height: 150px;
     }
 
     .cento__docinhos {
-
         width: 280px;
         height: 130px;
-        margin: 2rem auto;
+        margin-left: 800px;
         border-radius: 30px;
     }
 
@@ -683,16 +707,17 @@ body {
         display: block;
         text-align: center;
         padding: 0 1rem;
+
     }
 
     .titulo__docinhos h4 {
-        font-size: 1.6rem;
+        font-size: 2REM;
 
 
     }
 
     .titulo__docinhos h5 {
-        font-size: 1.2rem;
+        font-size: 1.7REM;
         font-family: "Inter", sans-serif;
 
     }
@@ -722,5 +747,57 @@ body {
     .logo__whats p {
         font-size: 0.9rem;
     }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .titulo__bolo {
+        font-size: 20px;
+        gap: 0.5rem;
+    }
+
+
+    .lista__bolos {
+        font-size: 15px;
+    }
+
+    .cento__docinhos {
+        width: 280px;
+        height: 130px;
+        margin-left: 550px;
+        border-radius: 30px;
+    }
+
+    .item__docinhos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+        margin-left: -98px;
+
+        position: relative;
+
+
+    }
+
+
+    .item__docinhos img {
+        width: 90px;
+        height: 90px;
+    }
+
+
+    .titulo__docinhos h4 {
+        font-size: 1.7rem;
+
+
+    }
+
+    .titulo__docinhos h5 {
+        font-size: 1.3REM;
+        font-family: "Inter", sans-serif;
+
+    }
+
 
 }
